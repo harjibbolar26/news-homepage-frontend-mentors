@@ -27,6 +27,12 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
+    position: sticky;
+    top: 0rem;
+    /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3); */
+    z-index: 999;
+    background-color: var(--Off-white);
+    padding: 2rem 0;
 }
 
 .ham-conatiner {
@@ -224,6 +230,16 @@ hr {
         width: 100%;
         height: 100%;
         z-index: 999;
+        animation: slideIn ease 0.8s;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 
     .ham-menu {
@@ -238,7 +254,7 @@ hr {
         width: 4rem;
         float: right;
         margin-top: 2rem ;
-        margin-right: 2rem;
+        margin-right: 5rem;
         color: var(--Very-dark-blue);
     }
 
@@ -259,6 +275,12 @@ hr {
         font-weight: bold;
     }
 
+    .head {
+        position: sticky;
+        top: 0rem;
+        width: 200vw;
+    }
+
     .head nav {
         display: none;
     }
@@ -267,15 +289,11 @@ hr {
         margin: 3rem 5rem;
     }
 
-    .head img {
-        position: fixed;
-        z-index: 999;
-    }
-
     #ham-open {
         position: fixed;
         top: 3rem;
         right: 5rem;
+        z-index: 999;
     }
 
     .main-content {
@@ -332,6 +350,9 @@ hr {
     .base-content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200vw;
     }
 
     .inner-base-content {
@@ -339,12 +360,12 @@ hr {
     }
 
     .base-content img {
-        height: 30rem;
-        width: 30rem;
+        height: 12rem;
+        width: 12rem;
     }
 
     .inner-base-content h2 {
         font-size: 3.2rem;
-        text-align: center;
+        /* text-align: center; */
     }
 }
