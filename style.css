@@ -35,7 +35,7 @@ body {
     padding: 2rem 0;
 }
 
-.ham-conatiner {
+.ham-container, .ham-wrap {
     display: none;
 }
 
@@ -287,6 +287,10 @@ hr {
 
     body {
         margin: 3rem 5rem;
+    }
+
+    .ham-wrap {
+        display: block;
     }
 
     #ham-open {
